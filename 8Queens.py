@@ -1,7 +1,7 @@
 import random
 
 def random_chromosome(size): #making random chromosomes 
-    return [ random.randint(1, nq) for _ in range(nq) ]
+    return [ random.randint(0, 7) for _ in range(nq) ]
 
 def fitness(chromosome):
     horizontal_collisions = sum([chromosome.count(queen)-1 for queen in chromosome])/2
